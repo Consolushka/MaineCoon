@@ -1,0 +1,17 @@
+@mixin base-heading {
+  font-size: 36px;
+  color: $color-white;
+  font-family: "Yeseva One", "Times New Roman", serif;
+  font-weight: 400;
+  margin: 0;
+  line-height: 32px;
+}
+
+.base-text {
+  margin: 0;
+  line-height: 21px;
+
+  &--primary {
+    color: $color-priamry;
+  }
+}

@@ -1,19 +1,22 @@
 @font-face {
-  font-family: Yeseva One;
+  font-family: "Yeseva One";
   src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face{
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 body{
   background-color: #1F1C1D;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
   margin: 0;
   min-width: 320px;
   box-sizing: border-box;

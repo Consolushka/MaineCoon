@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#181617">
   <title>Питомник Мейн-Кунов</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/Roboto-Black.ttf" type="font/ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Regular.ttf" type="font/ttf" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/YesevaOne-Regular.ttf" type="font/ttf" as="font" crossorigin="anonymous">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,17 +17,18 @@
 
 </head>
 <body>
-<a href="#top" class="btn btn--top" id="buttonTop">
-  <svg width="50" height="24">
-    <use xlink:href="img/sprite.svg#icon-crown"></use>
-  </svg>
-</a>
 <header class="header" id="top">
   <div class="container">
-    <div class="header-flex-wrapper">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <svg width="50" height="24">
+          <use xlink:href="img/sprite.svg#icon-crown"></use>
+        </svg>
+      </div>
+
       <div class="header__info">
 
-        <p class="header__info-location">
+        <p class="header__info-location base-text base-text--primary">
           Новосибирск
         </p>
 
@@ -34,11 +36,11 @@
           Питомник Мейн-Кунов
         </h1>
 
-        <p class="header__info-slogan">
+        <p class="header__info-slogan base-text base-text--primary">
           Первый питомник с расширенным спектром услуг
         </p>
 
-        <a class="btn btn--base header__info-btn" href="catalog.html">
+        <a class="btn btn--base header__info-btn base-text base-text--primary" href="catalog.html">
           Смотреть котиков
         </a>
 
@@ -66,10 +68,13 @@
           </li>
         </ul>
       </div>
-      <img class="header__cat" src="img/main-cat--320.png" alt="Главный, красивый, рыжий кот">
+      <picture>
+        <source type="image/webp" srcset="img/main-cat--320@2x.webp 2x, img/main-cat--320.webp 1x">
+        <source srcset="img/main-cat--320@2x.png 2x">
+        <img class="header__cat" src="img/main-cat--320.png" alt="Главный, красивый, рыжий кот" width="275" height="256">
+      </picture>
     </div>
   </div>
 </header>
-<script type="text/javascript" src="js/buttonTop.js"></script>
 </body>
 </html>
