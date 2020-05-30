@@ -1,0 +1,137 @@
+.examples__heading {
+  @include base-heading;
+  margin-bottom: 35px;
+}
+
+.examples__list {
+  margin: 0 auto;
+  width: 234px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.examples__slogan {
+  margin-bottom: 40px;
+}
+
+.examples__list-item {
+  margin-bottom: 40px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.2);
+
+  &--active {
+    color: #ffffff;
+
+    &:hover,
+    &:active {
+      color: #ffffff;
+    }
+  }
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.examples__btn {
+  outline: none;
+  &--previous {
+    transform: rotate(45deg);
+
+    &:hover {
+      transform: rotate(45deg) scale(1.1);
+    }
+
+    &:disabled {
+      &:hover {
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &--next {
+    transform: rotate(-135deg);
+
+    &:hover {
+      transform: rotate(-135deg) scale(1.1);
+    }
+
+    &:disabled {
+      &:hover {
+        transform: rotate(-135deg);
+      }
+    }
+  }
+
+  transition-duration: 0.3s;
+
+  &:hover {
+    border-color: lighten($color-priamry, 10%);
+  }
+
+  &:disabled {
+    border-color: darken($color-priamry, 20%);
+  }
+}
+
+.examples__image-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 45px;
+}
+
+.examples__image-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.examples__image-list-item {
+  transition: transform 0.7s;
+
+  &--next {
+    transform: translateX(-100%) scale(0);
+  }
+
+  &--previous {
+    transform: translateX(100%) scale(0);
+  }
+
+  &--first {
+    transform: translateX(100%) scale(1);
+
+    &-hidden {
+      transform: translateX(-9%) scale(0);
+    }
+  }
+
+  &--second {
+    transform: translateX(0) scale(1);
+  }
+
+  &--third {
+    transform: translateX(-100%) scale(1);
+
+    &-hidden {
+      transform: translateX(9%) scale(0);
+    }
+  }
+}
+
+.examples-more-btn {
+  display: block;
+  width: 141px;
+  padding: 15px 19px;
+  margin: 0 auto;
+}

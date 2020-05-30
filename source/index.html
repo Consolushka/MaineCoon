@@ -76,5 +76,56 @@
     </div>
   </div>
 </header>
+<main>
+  <section class="examples">
+    <div class="container">
+      <h2 class="examples__heading">Питомцы</h2>
+      <p class="examples__slogan base-text base-text--primary">
+        Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной
+      </p>
+      <ul class="examples__list">
+        <li class="examples__list-item examples__list-item--active base-text">
+          <a href="#">Коты</a>
+        </li>
+        <li class="examples__list-item base-text">
+          <a href="#">Кошки</a>
+        </li>
+        <li class="examples__list-item base-text">
+          <a href="#">Котята</a>
+        </li>
+      </ul>
+      <div class="examples__image-wrapper">
+        <button type="button" class="btn btn--arrow examples__btn examples__btn--previous">
+
+        </button>
+        <article class="examples__image-list">
+          <picture>
+            <source type="image/webp" srcset="img/example-cat-second@2x.webp 2x, img/example-cat-second.webp 1x">
+            <source srcset="img/example-cat-second@2x.png 2x">
+            <img  class="examples__image-list-item examples__image-list-item--previous examples__image-list-item--first-hidden" src="img/example-cat-second.png" width="234" height="248" alt="Изображение второго кота">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/example-cat-first@2x.webp 2x, img/example-cat-first.webp 1x">
+            <source srcset="img/example-cat-first@2x.png 2x">
+            <img class="examples__image-list-item" src="img/example-cat-first.png" width="234" height="248" alt="Изображение первого кота">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/example-cat-third@2x.webp 2x, img/example-cat-third.webp 1x">
+            <source srcset="img/example-cat-third@2x.png 2x">
+            <img  class="examples__image-list-item examples__image-list-item--next examples__image-list-item--third-hidden" src="img/example-cat-third.png" width="234" height="248" alt="Изображение третьего кота">
+          </picture>
+        </article>
+        <button type="button" class="btn btn--arrow examples__btn examples__btn--next">
+
+        </button>
+      </div>
+
+      <a class="btn btn--base examples-more-btn base-text base-text--primary" href="catalog.html">
+        Смотреть больше
+      </a>
+    </div>
+  </section>
+</main>
+<script type="text/javascript" src="js/carousel.js"></script>
 </body>
 </html>

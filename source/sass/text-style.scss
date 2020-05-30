@@ -1,5 +1,6 @@
 @mixin base-heading {
   font-size: 36px;
+  text-align: center;
   color: $color-white;
   font-family: "Yeseva One", "Times New Roman", serif;
   font-weight: 400;
@@ -9,6 +10,7 @@
 
 .base-text {
   margin: 0;
+  text-align: center;
   line-height: 21px;
 
   &--primary {
