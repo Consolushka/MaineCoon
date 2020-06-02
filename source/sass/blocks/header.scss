@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .header__info {
@@ -35,7 +35,6 @@
 }
 
 .header__info-heading {
-  @include base-heading;
   max-width: 280px;
   line-height: 42px;
   margin: 0 auto 17px auto;
@@ -51,10 +50,9 @@
   display: block;
   width: 142px;
   margin: 0 auto 11px auto;
-  padding: 13px 18px;
 }
 
-.header__cat {
+.header__cat-wrapper {
   align-self: flex-end;
   margin-right: -15px;
 }

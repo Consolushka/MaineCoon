@@ -5,8 +5,9 @@
   <meta name="theme-color" content="#181617">
   <title>Питомник Мейн-Кунов</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/Roboto-Regular.ttf" type="font/ttf" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/YesevaOne-Regular.ttf" type="font/ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-regular.ttf" type="font/ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/yesevaone-regular.ttf" type="font/ttf" as="font" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,7 +33,7 @@
           Новосибирск
         </p>
 
-        <h1 class="header__info-heading">
+        <h1 class="title header__info-heading">
           Питомник Мейн-Кунов
         </h1>
 
@@ -68,7 +69,7 @@
           </li>
         </ul>
       </div>
-      <picture>
+      <picture class="header__cat-wrapper">
         <source type="image/webp" srcset="img/main-cat--320@2x.webp 2x, img/main-cat--320.webp 1x">
         <source srcset="img/main-cat--320@2x.png 2x">
         <img class="header__cat" src="img/main-cat--320.png" alt="Главный, красивый, рыжий кот" width="275" height="256">
@@ -79,44 +80,52 @@
 <main>
   <section class="examples">
     <div class="container">
-      <h2 class="examples__heading">Питомцы</h2>
+      <h2 class="examples__heading title title--h2">Питомцы</h2>
       <p class="examples__slogan base-text base-text--primary">
         Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной
       </p>
-      <ul class="examples__list">
-        <li class="examples__list-item examples__list-item--active base-text">
-          <a href="#">Коты</a>
-        </li>
-        <li class="examples__list-item base-text">
-          <a href="#">Кошки</a>
-        </li>
-        <li class="examples__list-item base-text">
-          <a href="#">Котята</a>
-        </li>
-      </ul>
-      <div class="examples__image-wrapper">
-        <button type="button" class="btn btn--arrow examples__btn examples__btn--previous">
+      <div class="examples__categories">
+        <ul class="categories-nav">
+          <li class="categories-nav-item categories-nav-item--active">
+            <a href="#">Коты</a>
+          </li>
+          <li class="categories-nav-item">
+            <a href="#">Кошки</a>
+          </li>
+          <li class="categories-nav-item">
+            <a href="#">Котята</a>
+          </li>
+        </ul>
+      </div>
 
+      <div class="examples__image-wrapper">
+        <button type="button" class="carousel-arrow carousel-arrow--prev">
+          <svg width="10" height="20" fill="none">
+               <use xlink:href="img/sprite.svg#icon-arrow"></use>
+          </svg>
         </button>
         <article class="examples__image-list">
           <picture>
-            <source type="image/webp" srcset="img/example-cat-second@2x.webp 2x, img/example-cat-second.webp 1x">
-            <source srcset="img/example-cat-second@2x.png 2x">
-            <img  class="examples__image-list-item examples__image-list-item--previous examples__image-list-item--first-hidden" src="img/example-cat-second.png" width="234" height="248" alt="Изображение второго кота">
+            <source type="image/webp" srcset="img/example-cat--second--320@2x.webp 2x, img/example-cat--second--320@1x.webp 1x">
+            <source srcset="img/example-cat--second--320@2x.png 2x">
+            <img  class="examples__image-list-item examples__image-list-item--previous examples__image-list-item--first-hidden" src="img/example-cat--second--320@1x.png" width="234" height="248" alt="Изображение второго кота">
           </picture>
           <picture>
-            <source type="image/webp" srcset="img/example-cat-first@2x.webp 2x, img/example-cat-first.webp 1x">
-            <source srcset="img/example-cat-first@2x.png 2x">
-            <img class="examples__image-list-item" src="img/example-cat-first.png" width="234" height="248" alt="Изображение первого кота">
+            <source type="image/webp" srcset="img/example-cat--first--320@2x.webp 2x, img/example-cat--first--320@1x.webp 1x">
+            <source srcset="img/example-cat--first--320@2x.png 2x">
+            <source srcset="img/example-cat--first--320@1x.png" media="(max-width: 400px)" sizes="234px 248px">
+            <img class="examples__image-list-item" src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
           </picture>
           <picture>
-            <source type="image/webp" srcset="img/example-cat-third@2x.webp 2x, img/example-cat-third.webp 1x">
-            <source srcset="img/example-cat-third@2x.png 2x">
-            <img  class="examples__image-list-item examples__image-list-item--next examples__image-list-item--third-hidden" src="img/example-cat-third.png" width="234" height="248" alt="Изображение третьего кота">
+            <source type="image/webp" srcset="img/example-cat--third--320@2x.webp 2x, img/example-cat--third--320@1x.webp 1x">
+            <source srcset="img/example-cat--third--768@2x.png 2x">
+            <img  class="examples__image-list-item examples__image-list-item--next examples__image-list-item--third-hidden" src="img/example-cat--third--320@1x.png" width="234" height="248" alt="Изображение третьего кота">
           </picture>
         </article>
-        <button type="button" class="btn btn--arrow examples__btn examples__btn--next">
-
+        <button type="button" class="carousel-arrow carousel-arrow--next">
+          <svg width="10" height="20" fill="none">
+            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+          </svg>
         </button>
       </div>
 

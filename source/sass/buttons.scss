@@ -1,24 +1,18 @@
 .btn {
   cursor: pointer;
-  border: none;
   background: none;
+  border: 1px solid;
+  color: $color-white;
+  line-height: 14px;
+  font-size: 12px;
+  padding: 12px 18px;
 
   &--base {
-    border: 0.5px solid $color-priamry;
-    color: $color-white;
-    line-height: 14px;
-    font-size: 12px;
+    border-color: $color-priamry;
 
     &:hover {
       box-shadow: 0 0 2px $color-white;
       transition: 0.3s;
     }
-  }
-
-  &--arrow {
-    width: 18px;
-    height: 18px;
-    border-left: 1px solid $color-priamry;
-    border-bottom: 1px solid $color-priamry;
   }
 }

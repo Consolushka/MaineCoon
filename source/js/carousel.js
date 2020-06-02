@@ -1,6 +1,6 @@
 var images = document.querySelectorAll(".examples__image-list-item");
-var previousBtn = document.querySelector(".examples__btn--previous");
-var nextBtn = document.querySelector(".examples__btn--next");
+var previousBtn = document.querySelector(".carousel-arrow--prev");
+var nextBtn = document.querySelector(".carousel-arrow--next");
 console.log(images);
 var current = 1;
 previousBtn.addEventListener("click", function (e) {

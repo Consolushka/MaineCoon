@@ -1,4 +1,4 @@
-@mixin base-heading {
+.title {
   font-size: 36px;
   text-align: center;
   color: $color-white;
@@ -6,12 +6,16 @@
   font-weight: 400;
   margin: 0;
   line-height: 32px;
+
+  &--h2{
+    font-size: 28px;
+  }
 }
 
 .base-text {
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
-  line-height: 21px;
+  line-height: 140%;
 
   &--primary {
     color: $color-priamry;
