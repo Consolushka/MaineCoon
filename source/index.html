@@ -105,22 +105,26 @@
           </svg>
         </button>
         <article class="examples__image-list">
-          <picture>
+
+          <picture  class="examples__image-list-item examples__image-list-item--first examples__image-list-item--hidden">
             <source type="image/webp" srcset="img/example-cat--second--320@2x.webp 2x, img/example-cat--second--320@1x.webp 1x">
             <source srcset="img/example-cat--second--320@2x.png 2x">
-            <img  class="examples__image-list-item examples__image-list-item--previous examples__image-list-item--first-hidden" src="img/example-cat--second--320@1x.png" width="234" height="248" alt="Изображение второго кота">
+            <img src="img/example-cat--second--320@1x.png" width="234" height="248" alt="Изображение второго кота">
           </picture>
-          <picture>
+
+          <picture class="examples__image-list-item examples__image-list-item--second" >
             <source type="image/webp" srcset="img/example-cat--first--320@2x.webp 2x, img/example-cat--first--320@1x.webp 1x">
             <source srcset="img/example-cat--first--320@2x.png 2x">
             <source srcset="img/example-cat--first--320@1x.png" media="(max-width: 400px)" sizes="234px 248px">
-            <img class="examples__image-list-item" src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
+            <img src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
           </picture>
-          <picture>
+
+          <picture  class="examples__image-list-item examples__image-list-item--third examples__image-list-item--hidden">
             <source type="image/webp" srcset="img/example-cat--third--320@2x.webp 2x, img/example-cat--third--320@1x.webp 1x">
             <source srcset="img/example-cat--third--768@2x.png 2x">
-            <img  class="examples__image-list-item examples__image-list-item--next examples__image-list-item--third-hidden" src="img/example-cat--third--320@1x.png" width="234" height="248" alt="Изображение третьего кота">
+            <img src="img/example-cat--third--320@1x.png" width="234" height="248" alt="Изображение третьего кота">
           </picture>
+
         </article>
         <button type="button" class="carousel-arrow carousel-arrow--next">
           <svg width="10" height="20" fill="none">
@@ -135,6 +139,6 @@
     </div>
   </section>
 </main>
-<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/build/carousel.js"></script>
 </body>
 </html>

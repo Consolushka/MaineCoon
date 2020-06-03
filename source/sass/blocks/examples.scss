@@ -54,9 +54,10 @@
 
 .examples__image-list {
   display: flex;
+  width: 300px;
   position: relative;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   overflow: hidden;
 }
@@ -74,24 +75,23 @@
 
   &--first {
     transform: translateX(100%) scale(1);
-
-    &-hidden {
-      transform: translateX(-9%) scale(0);
-    }
   }
 
   &--second {
-    object-fit: none;
     transform: translateX(0) scale(1);
   }
 
   &--third {
     transform: translateX(-100%) scale(1);
-
-    &-hidden {
-      transform: translateX(9%) scale(0);
-    }
   }
+}
+
+.examples__image-list-item--first.examples__image-list-item--hidden{
+  transform: translateX(-9%) scale(0);
+}
+
+.examples__image-list-item--third.examples__image-list-item--hidden{
+  transform: translateX(9%) scale(0);
 }
 
 .examples-more-btn {

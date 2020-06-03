@@ -12,6 +12,9 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
+var uglify = require('gulp-uglify');
+var browserify = require('gulp-browserify');
+
 
 var del = require("del");
 
@@ -32,6 +35,16 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task('minify', function () {
+  return gulp.src('source/js/carousel.js')
+    .pipe(browserify({
+      insertGlobals : true,
+//      transform: ['babelify'],
+    }))
+//    .pipe(uglify())
+    .pipe(gulp.dest('source/js/build'))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "source/",
@@ -42,6 +55,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
+  gulp.watch("source/js/*.js", gulp.series("minify"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
@@ -76,7 +90,8 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+//    "source/js/**",
+    "source/js/build/**",
     "source/*.ico",
     "source/*.html",
     "source/css/style.min.css"
@@ -97,6 +112,7 @@ gulp.task("build", gulp.series(
   "webp",
   "copy",
   "css",
+  "minify",
   "svgstore"
 ));
 gulp.task("start", gulp.series("build", "server"));

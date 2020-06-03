@@ -4,10 +4,14 @@
   "private": true,
   "description": "Страница по макету HTML Academy 'Питомник Мейн-Кунов'",
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
     "gulp": "4.0.x",
+    "gulp-babel": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
     "gulp-csso": "^4.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.x",
@@ -17,7 +21,7 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
-    "stylelint": "10.1.x",
+    "stylelint": "^13.5.0",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -25,6 +29,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
+    "minify": "gulp minify",
     "start": "gulp start"
   },
   "browserslist": [
@@ -45,6 +50,9 @@
   },
   "dependencies": {
     "del": "^5.1.0",
+    "gulp-include": "^2.4.1",
+    "gulp-uglify": "^3.0.2",
+    "number-to-words": "^1.2.4",
     "svgxuse": "^1.2.6"
   }
 }
