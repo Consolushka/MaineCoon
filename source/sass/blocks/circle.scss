@@ -1,0 +1,15 @@
+.circle{
+  border-radius: 50%;
+
+  &--main{
+    width: 280px;
+    height: 280px;
+    border: 1px solid $color-priamry;
+  }
+
+  &--secondary{
+    width: 230px;
+    height: 230px;
+    background: #151313;
+  }
+}

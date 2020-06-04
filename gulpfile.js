@@ -55,7 +55,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
-  gulp.watch("source/js/*.js", gulp.series("minify"));
+  gulp.watch("source/js/*.js", gulp.series("minify")).on("change", server.reload);
   gulp.watch("source/*.html").on("change", server.reload);
 });
 

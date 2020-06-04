@@ -1,0 +1,21 @@
+.base-list{
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+.base-list__item{
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  &:before{
+    position: absolute;
+    content: "";
+    left: -20px;
+    transform: translateY(50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $color-priamry;
+  }
+}

@@ -16,8 +16,14 @@
   margin: 0 auto;
   text-align: center;
   line-height: 140%;
+  font-weight: 300;
+  color: $color-priamry;
 
-  &--primary {
-    color: $color-priamry;
+  &--white{
+    color: $color-white;
+  }
+
+  &--regular{
+    font-weight: 400;
   }
 }

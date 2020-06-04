@@ -1,3 +1,6 @@
+.examples{
+  margin-bottom: 60px;
+}
 .examples__heading {
   margin-bottom: 23px;
 }
@@ -11,36 +14,6 @@
 .examples__slogan {
   margin-bottom: 31px;
   max-width: 297px;
-}
-
-.categories-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.categories-nav-item {
-  font-size: 16px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.2);
-
-  &--active {
-    color: #ffffff;
-
-    &:hover,
-    &:active {
-      color: #ffffff;
-    }
-  }
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.1);
-  }
 }
 
 .examples__image-wrapper {

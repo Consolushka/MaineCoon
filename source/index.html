@@ -29,7 +29,7 @@
 
       <div class="header__info">
 
-        <p class="header__info-location base-text base-text--primary">
+        <p class="header__info-location base-text base-text--regular">
           Новосибирск
         </p>
 
@@ -37,11 +37,11 @@
           Питомник Мейн-Кунов
         </h1>
 
-        <p class="header__info-slogan base-text base-text--primary">
+        <p class="header__info-slogan base-text base-text--regular">
           Первый питомник с расширенным спектром услуг
         </p>
 
-        <a class="btn btn--base header__info-btn base-text base-text--primary" href="catalog.html">
+        <a class="btn btn--base header__info-btn" href="catalog.html">
           Смотреть котиков
         </a>
 
@@ -81,7 +81,7 @@
   <section class="examples">
     <div class="container">
       <h2 class="examples__heading title title--h2">Питомцы</h2>
-      <p class="examples__slogan base-text base-text--primary">
+      <p class="examples__slogan base-text">
         Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной
       </p>
       <div class="examples__categories">
@@ -101,25 +101,25 @@
       <div class="examples__image-wrapper">
         <button type="button" class="carousel-arrow carousel-arrow--prev">
           <svg width="10" height="20" fill="none">
-               <use xlink:href="img/sprite.svg#icon-arrow"></use>
+            <use xlink:href="img/sprite.svg#icon-arrow"></use>
           </svg>
         </button>
         <article class="examples__image-list">
 
-          <picture  class="examples__image-list-item examples__image-list-item--first examples__image-list-item--hidden">
+          <picture class="examples__image-list-item examples__image-list-item--first examples__image-list-item--hidden">
             <source type="image/webp" srcset="img/example-cat--second--320@2x.webp 2x, img/example-cat--second--320@1x.webp 1x">
             <source srcset="img/example-cat--second--320@2x.png 2x">
             <img src="img/example-cat--second--320@1x.png" width="234" height="248" alt="Изображение второго кота">
           </picture>
 
-          <picture class="examples__image-list-item examples__image-list-item--second" >
+          <picture class="examples__image-list-item examples__image-list-item--second">
             <source type="image/webp" srcset="img/example-cat--first--320@2x.webp 2x, img/example-cat--first--320@1x.webp 1x">
             <source srcset="img/example-cat--first--320@2x.png 2x">
             <source srcset="img/example-cat--first--320@1x.png" media="(max-width: 400px)" sizes="234px 248px">
             <img src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
           </picture>
 
-          <picture  class="examples__image-list-item examples__image-list-item--third examples__image-list-item--hidden">
+          <picture class="examples__image-list-item examples__image-list-item--third examples__image-list-item--hidden">
             <source type="image/webp" srcset="img/example-cat--third--320@2x.webp 2x, img/example-cat--third--320@1x.webp 1x">
             <source srcset="img/example-cat--third--768@2x.png 2x">
             <img src="img/example-cat--third--320@1x.png" width="234" height="248" alt="Изображение третьего кота">
@@ -133,9 +133,46 @@
         </button>
       </div>
 
-      <a class="btn btn--base examples-more-btn base-text base-text--primary" href="catalog.html">
+      <a class="btn btn--base examples-more-btn base-text" href="catalog.html">
         Смотреть больше
       </a>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <div class="features__wrapper">
+        <h2 class="features__heading title title--h2">Особенности породы</h2>
+        <p class="features__slogan base-text">
+          Мейн-Кун - это порода, которая вызывает к себе уважение.
+          Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных
+        </p>
+        <div class="features__circle-main circle circle--main">
+          <div class="features__circle-secondary circle circle--secondary">
+            <picture class="features__cat">
+              <source type="image/webp" srcset="img/features-cat--320@2x.webp 2x, img/features-cat--320@1x.webp 1x">
+              <source srcset="img/features-cat--320@2x.png 2x">
+              <img src="img/features-cat--320@1x.png" width="267" height="291" alt="Изображение образцового кота">
+            </picture>
+          </div>
+        </div>
+        <div class="features__list">
+          <ul class="base-list base-text base-text--white">
+            <li class="features__list-item base-list__item">
+              Легко уживается в семьях с детьми или другими животными
+            </li>
+            <li class="features__list-item base-list__item">
+              Выполняет команды как дрессированная собака
+            </li>
+            <li class="features__list-item base-list__item">
+              Вес может достигать 12 кг, а длина 1 м
+            </li>
+            <li class="features__list-item base-list__item">
+              Внешний вид этой кошки
+              похож на дикую рысь
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 </main>

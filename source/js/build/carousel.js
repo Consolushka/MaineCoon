@@ -1417,7 +1417,6 @@ var converter = require("number-to-words");
 var images = document.querySelectorAll(".examples__image-list-item");
 var previousBtn = document.querySelector(".carousel-arrow--prev");
 var nextBtn = document.querySelector(".carousel-arrow--next");
-console.log(images);
 var current = 1;
 previousBtn.addEventListener("click", function (e) {
   images[current].className = "examples__image-list-item examples__image-list-item--previous";
@@ -1440,5 +1439,5 @@ nextBtn.addEventListener("click", function (e) {
   }
 });
 
-}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_dabff8fc.js","/")
+}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_21bde43b.js","/")
 },{"buffer":2,"e/U+97":5,"number-to-words":4}]},{},[6])
