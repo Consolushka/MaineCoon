@@ -1,5 +1,6 @@
 .examples{
   margin-bottom: 60px;
+  text-align:center;
 }
 .examples__heading {
   margin-bottom: 23px;
@@ -19,7 +20,7 @@
 .examples__image-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   margin-bottom: 38px;
@@ -28,11 +29,4 @@
 .examples__image-list {
   width: 234px;
   height: 248px;
-  margin: 0 20px;
-}
-
-.examples-more-btn {
-  display: block;
-  width: 141px;
-  margin: 0 auto;
 }

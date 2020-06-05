@@ -1,19 +1,15 @@
 .btn {
   cursor: pointer;
   background: none;
-  border: 1px solid;
+  border: 1px solid $color-priamry;
   color: $color-white;
   line-height: 14px;
   font-size: 12px;
   padding: 12px 17px;
   font-weight: 600;
 
-  &--base {
-    border-color: $color-priamry;
-
-    &:hover {
-      box-shadow: 0 0 2px $color-white;
-      transition: 0.3s;
-    }
+  &:hover {
+    box-shadow: 0 0 2px $color-white;
+    transition: 0.3s;
   }
 }

@@ -34,14 +34,6 @@
   }
 }
 
-.features__list-item{
-  &:first-child{
-    max-width: 233px;
-  }
-  &:nth-child(2){
-    max-width: 160px;
-  }
-  &:last-child{
-    max-width: 163px;
-  }
+.features-list{
+  max-width: 233px;
 }
