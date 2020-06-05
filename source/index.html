@@ -99,34 +99,47 @@
       </div>
 
       <div class="examples__image-wrapper">
-        <button type="button" class="carousel-arrow carousel-arrow--prev">
+        <button type="button" class="base-arrow base-arrow--prev carousel-arrow carousel-arrow--prev">
           <svg width="10" height="20" fill="none">
             <use xlink:href="img/sprite.svg#icon-arrow"></use>
           </svg>
         </button>
-        <article class="examples__image-list">
+        <article class="carousel-list examples__image-list">
 
-          <picture class="examples__image-list-item examples__image-list-item--first examples__image-list-item--hidden">
+          <picture class="carousel-list__item carousel-list__item--previous">
+            <source type="image/webp" srcset="img/example-cat--first--320@2x.webp 2x, img/example-cat--first--320@1x.webp 1x">
+            <source srcset="img/example-cat--first--320@2x.png 2x">
+            <source srcset="img/example-cat--first--320@1x.png" media="(max-width: 400px)" sizes="234px 248px">
+            <img src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
+          </picture>
+          <picture class="carousel-list__item carousel-list__item--previous">
             <source type="image/webp" srcset="img/example-cat--second--320@2x.webp 2x, img/example-cat--second--320@1x.webp 1x">
             <source srcset="img/example-cat--second--320@2x.png 2x">
             <img src="img/example-cat--second--320@1x.png" width="234" height="248" alt="Изображение второго кота">
           </picture>
 
-          <picture class="examples__image-list-item examples__image-list-item--second">
+          <picture class="carousel-list__item carousel-list__item--current">
             <source type="image/webp" srcset="img/example-cat--first--320@2x.webp 2x, img/example-cat--first--320@1x.webp 1x">
             <source srcset="img/example-cat--first--320@2x.png 2x">
             <source srcset="img/example-cat--first--320@1x.png" media="(max-width: 400px)" sizes="234px 248px">
             <img src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
           </picture>
 
-          <picture class="examples__image-list-item examples__image-list-item--third examples__image-list-item--hidden">
+          <picture class="carousel-list__item carousel-list__item--next">
             <source type="image/webp" srcset="img/example-cat--third--320@2x.webp 2x, img/example-cat--third--320@1x.webp 1x">
             <source srcset="img/example-cat--third--768@2x.png 2x">
             <img src="img/example-cat--third--320@1x.png" width="234" height="248" alt="Изображение третьего кота">
           </picture>
 
+          <picture class="carousel-list__item carousel-list__item--next">
+            <source type="image/webp" srcset="img/example-cat--first--320@2x.webp 2x, img/example-cat--first--320@1x.webp 1x">
+            <source srcset="img/example-cat--first--320@2x.png 2x">
+            <source srcset="img/example-cat--first--320@1x.png" media="(max-width: 400px)" sizes="234px 248px">
+            <img src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
+          </picture>
+
         </article>
-        <button type="button" class="carousel-arrow carousel-arrow--next">
+        <button type="button" class="base-arrow base-arrow--next carousel-arrow carousel-arrow--next">
           <svg width="10" height="20" fill="none">
             <use xlink:href="img/sprite.svg#icon-arrow"></use>
           </svg>

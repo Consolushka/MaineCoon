@@ -26,45 +26,9 @@
 }
 
 .examples__image-list {
-  display: flex;
-  width: 300px;
-  position: relative;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  overflow: hidden;
-}
-
-.examples__image-list-item {
-  transition: transform 0.7s;
-
-  &--next {
-    transform: translateX(-100%) scale(0);
-  }
-
-  &--previous {
-    transform: translateX(100%) scale(0);
-  }
-
-  &--first {
-    transform: translateX(100%) scale(1);
-  }
-
-  &--second {
-    transform: translateX(0) scale(1);
-  }
-
-  &--third {
-    transform: translateX(-100%) scale(1);
-  }
-}
-
-.examples__image-list-item--first.examples__image-list-item--hidden{
-  transform: translateX(-9%) scale(0);
-}
-
-.examples__image-list-item--third.examples__image-list-item--hidden{
-  transform: translateX(9%) scale(0);
+  width: 234px;
+  height: 248px;
+  margin: 0 20px;
 }
 
 .examples-more-btn {

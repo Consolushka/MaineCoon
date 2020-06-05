@@ -126,7 +126,7 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 }(typeof exports === 'undefined' ? (this.base64js = {}) : exports))
 
 }).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/..\\..\\node_modules\\browserify\\node_modules\\base64-js\\lib\\b64.js","/..\\..\\node_modules\\browserify\\node_modules\\base64-js\\lib")
-},{"buffer":2,"e/U+97":5}],2:[function(require,module,exports){
+},{"buffer":2,"e/U+97":4}],2:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 /*!
  * The buffer module from node.js, for the browser.
@@ -1239,7 +1239,7 @@ function assert (test, message) {
 }
 
 }).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/..\\..\\node_modules\\browserify\\node_modules\\buffer\\index.js","/..\\..\\node_modules\\browserify\\node_modules\\buffer")
-},{"base64-js":1,"buffer":2,"e/U+97":5,"ieee754":3}],3:[function(require,module,exports){
+},{"base64-js":1,"buffer":2,"e/U+97":4,"ieee754":3}],3:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
@@ -1327,19 +1327,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 }
 
 }).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/..\\..\\node_modules\\ieee754\\index.js","/..\\..\\node_modules\\ieee754")
-},{"buffer":2,"e/U+97":5}],4:[function(require,module,exports){
-(function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
-/*!
- * Number-To-Words util
- * @version v1.2.4
- * @link https://github.com/marlun78/number-to-words
- * @author Martin Eneqvist (https://github.com/marlun78)
- * @contributors Aleksey Pilyugin (https://github.com/pilyugin),Jeremiah Hall (https://github.com/jeremiahrhall),Adriano Melo (https://github.com/adrianomelo),dmrzn (https://github.com/dmrzn)
- * @license MIT
- */
-!function(){"use strict";var e="object"==typeof self&&self.self===self&&self||"object"==typeof global&&global.global===global&&global||this,t=9007199254740991;function f(e){return!("number"!=typeof e||e!=e||e===1/0||e===-1/0)}function l(e){return"number"==typeof e&&Math.abs(e)<=t}var n=/(hundred|thousand|(m|b|tr|quadr)illion)$/,r=/teen$/,o=/y$/,i=/(zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)$/,s={zero:"zeroth",one:"first",two:"second",three:"third",four:"fourth",five:"fifth",six:"sixth",seven:"seventh",eight:"eighth",nine:"ninth",ten:"tenth",eleven:"eleventh",twelve:"twelfth"};function h(e){return n.test(e)||r.test(e)?e+"th":o.test(e)?e.replace(o,"ieth"):i.test(e)?e.replace(i,a):e}function a(e,t){return s[t]}var u=10,d=100,p=1e3,v=1e6,b=1e9,y=1e12,c=1e15,g=9007199254740992,m=["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"],w=["zero","ten","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"];function x(e,t){var n,r=parseInt(e,10);if(!f(r))throw new TypeError("Not a finite number: "+e+" ("+typeof e+")");if(!l(r))throw new RangeError("Input is not a safe number, it’s either too large or too small.");return n=function e(t){var n,r,o=arguments[1];if(0===t)return o?o.join(" ").replace(/,$/,""):"zero";o||(o=[]);t<0&&(o.push("minus"),t=Math.abs(t));t<20?(n=0,r=m[t]):t<d?(n=t%u,r=w[Math.floor(t/u)],n&&(r+="-"+m[n],n=0)):t<p?(n=t%d,r=e(Math.floor(t/d))+" hundred"):t<v?(n=t%p,r=e(Math.floor(t/p))+" thousand,"):t<b?(n=t%v,r=e(Math.floor(t/v))+" million,"):t<y?(n=t%b,r=e(Math.floor(t/b))+" billion,"):t<c?(n=t%y,r=e(Math.floor(t/y))+" trillion,"):t<=g&&(n=t%c,r=e(Math.floor(t/c))+" quadrillion,");o.push(r);return e(n,o)}(r),t?h(n):n}var M={toOrdinal:function(e){var t=parseInt(e,10);if(!f(t))throw new TypeError("Not a finite number: "+e+" ("+typeof e+")");if(!l(t))throw new RangeError("Input is not a safe number, it’s either too large or too small.");var n=String(t),r=Math.abs(t%100),o=11<=r&&r<=13,i=n.charAt(n.length-1);return n+(o?"th":"1"===i?"st":"2"===i?"nd":"3"===i?"rd":"th")},toWords:x,toWordsOrdinal:function(e){return h(x(e))}};"undefined"!=typeof exports?("undefined"!=typeof module&&module.exports&&(exports=module.exports=M),exports.numberToWords=M):e.numberToWords=M}();
-}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/..\\..\\node_modules\\number-to-words\\numberToWords.min.js","/..\\..\\node_modules\\number-to-words")
-},{"buffer":2,"e/U+97":5}],5:[function(require,module,exports){
+},{"buffer":2,"e/U+97":4}],4:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 // shim for using process in browser
 
@@ -1406,38 +1394,33 @@ process.chdir = function (dir) {
 };
 
 }).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/..\\..\\node_modules\\process\\browser.js","/..\\..\\node_modules\\process")
-},{"buffer":2,"e/U+97":5}],6:[function(require,module,exports){
+},{"buffer":2,"e/U+97":4}],5:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
-//Пришлось проделать много манипуляций чтобы можно было использовать require в js.
-var converter = require("number-to-words");
-//Этот модуль позволяет перевести цифру в ее текстовую форму https://www.npmjs.com/package/number-to-words
-//Создал новый таск который оптимизирует+оптимизирует js и позволяет использовать require. В итоге он создает конечную версию файла js в папке js/build.
-//И все бы ничего, но оказалось что конечный файл супер огромный можно было бы обойтись без него, а просто создать массив объектов из цифр, ключи который это их текстовый вид
-//Но возможно это и хорошо, что я через это прошел
-var images = document.querySelectorAll(".examples__image-list-item");
+var images = document.querySelectorAll(".carousel-list__item");
 var previousBtn = document.querySelector(".carousel-arrow--prev");
 var nextBtn = document.querySelector(".carousel-arrow--next");
-var current = 1;
+var current = Math.trunc(images.length/2);
+console.log(current);
 previousBtn.addEventListener("click", function (e) {
-  images[current].className = "examples__image-list-item examples__image-list-item--previous";
+  images[current].className = "carousel-list__item carousel-list__item--next";
   current -= 1;
-  images[current].classList.add("examples__image-list-item--"+converter.toWordsOrdinal(current+1));
-  images[current].classList.remove("examples__image-list-item--hidden");
+  images[current].classList.add("carousel-list__item--current");
+  images[current].classList.remove("examples__image-list-item--previous");
   nextBtn.removeAttribute("disabled");
   if(current===0){
     previousBtn.setAttribute("disabled", "");
   }
 });
 nextBtn.addEventListener("click", function (e) {
-  images[current].className = "examples__image-list-item examples__image-list-item--next";
+  images[current].className = "carousel-list__item carousel-list__item--previous";
   current += 1;
-  images[current].classList.add("examples__image-list-item--"+converter.toWordsOrdinal(current+1));
-  images[current].classList.remove("examples__image-list-item--hidden");
+  images[current].classList.add("carousel-list__item--current");
+  images[current].classList.remove("carousel-list__item--next");
   previousBtn.removeAttribute("disabled");
   if(current===images.length-1){
     nextBtn.setAttribute("disabled", "");
   }
 });
 
-}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_21bde43b.js","/")
-},{"buffer":2,"e/U+97":5,"number-to-words":4}]},{},[6])
+}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_482a715.js","/")
+},{"buffer":2,"e/U+97":4}]},{},[5])

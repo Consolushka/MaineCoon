@@ -1,0 +1,28 @@
+.carousel-list{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-list__item{
+  position: absolute;
+  transition-duration: 0.7s;
+
+  &--next{
+    left: 100%;
+    transform: scale(0);
+  }
+
+  &--previous{
+    left: -100%;
+    transform: scale(0);
+  }
+
+  &--current{
+    left: 0;
+    transform: scale(1);
+  }
+}
