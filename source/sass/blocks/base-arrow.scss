@@ -4,15 +4,15 @@
   background: none;
   outline: none;
   transition-duration: 0.3s;
-  stroke: $color-priamry;
+  stroke: $color-primary;
 
   &:hover {
     transform: scale(1.2);
-    stroke: lighten($color-priamry, 10%);
+    stroke: lighten($color-primary, 10%);
   }
 
   &:disabled {
-    stroke: darken($color-priamry, 20%);
+    stroke: darken($color-primary, 20%);
     &:hover{
       transform: none;
     }
