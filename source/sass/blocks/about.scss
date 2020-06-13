@@ -39,11 +39,12 @@
 
     .about__card-btn{
       transform: translateY(-50%) scale(1.3);
+
+      &:hover{
+        stroke: $color-white;
+      }
     }
   }
-}
-
-.about__card-wrapper{
 }
 
 .about__card-name{
@@ -64,5 +65,5 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -34px;
+  right: -28px;
 }
