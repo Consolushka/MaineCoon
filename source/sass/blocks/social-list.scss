@@ -1,4 +1,14 @@
 .social-list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-list__item{
+  fill: $color-white;
+
+  &:hover{
+    fill: $color-primary;
+  }
 }

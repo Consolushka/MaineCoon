@@ -18,15 +18,14 @@
 }
 
 .examples__image-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
   margin-bottom: 38px;
 }
 
 .examples__image-list {
-  width: 234px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 298px;
   height: 248px;
 }

@@ -1,0 +1,90 @@
+.team {
+  padding-top: 60px;
+  text-align: center;
+  background-color: $color-dark;
+}
+
+.team__heading {
+  padding-bottom: 35px;
+}
+
+.team__slogan {
+  margin-bottom: 40px;
+}
+
+.team-wrapper {
+  height: 427px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team__arrow {
+  top: 50px;
+  z-index: 1;
+  left: 50%;
+  position: absolute;
+
+  &--next {
+    transform: translate(73px, 2px);
+
+    &:hover {
+      transform: translate(73px, 2px) scale(1.2);
+    }
+
+    &:disabled {
+      &:hover{
+        transform: translate(73px, 2px);
+      }
+    }
+  }
+
+  &--prev {
+    transform: rotate(180deg) translateX(95px);
+
+    &:hover {
+      transform: rotate(180deg) translateX(95px) scale(1.2);
+    }
+
+    &:disabled {
+      &:hover{
+        transform: rotate(180deg) translateX(95px);
+      }
+    }
+  }
+}
+
+.team__member {
+  padding-top: 88px;
+  position: absolute;
+  width: 100%;
+  background-color: $color-base;
+}
+
+.team__member-image {
+  top: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.team__member-name {
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.team__member-post {
+  margin-bottom: 25px;
+}
+
+.team__member-quote {
+  margin-bottom: 30px;
+  max-width: 276px;
+}
+
+.team__member-social-list {
+  margin: 0 auto;
+  width: 70px;
+  margin-bottom: 16px;
+}

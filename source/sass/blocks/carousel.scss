@@ -1,6 +1,8 @@
 .carousel-list{
   position: relative;
   overflow: hidden;
+
+  margin: 0 auto;
 }
 
 .carousel-list__item{
@@ -18,7 +20,7 @@
   }
 
   &--current{
-    left: 0;
-    transform: scale(1);
+    left: 50%;
+    transform: scale(1) translateX(-50%);
   }
 }

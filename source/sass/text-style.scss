@@ -10,6 +10,14 @@
   &--h2{
     font-size: 28px;
   }
+
+  &--h3{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: $color-primary;
+    line-height: 21px;
+  }
 }
 
 .base-text {

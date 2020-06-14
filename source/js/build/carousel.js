@@ -1396,31 +1396,39 @@ process.chdir = function (dir) {
 }).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/..\\..\\node_modules\\process\\browser.js","/..\\..\\node_modules\\process")
 },{"buffer":2,"e/U+97":4}],5:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
-var items = document.querySelectorAll(".carousel-list__item");
-var previousBtn = document.querySelector(".carousel-arrow--prev");
-var nextBtn = document.querySelector(".carousel-arrow--next");
-var current = Math.trunc(items.length/2);
-console.log(current);
-previousBtn.addEventListener("click", function (e) {
-  items[current].className = "carousel-list__item carousel-list__item--next";
-  current -= 1;
-  items[current].classList.add("carousel-list__item--current");
-  items[current].classList.remove("examples__image-list-item--previous");
-  nextBtn.removeAttribute("disabled");
-  if(current===0){
-    previousBtn.setAttribute("disabled", "");
-  }
-});
-nextBtn.addEventListener("click", function (e) {
-  items[current].className = "carousel-list__item carousel-list__item--previous";
-  current += 1;
-  items[current].classList.add("carousel-list__item--current");
-  items[current].classList.remove("carousel-list__item--next");
-  previousBtn.removeAttribute("disabled");
-  if(current===items.length-1){
-    nextBtn.setAttribute("disabled", "");
-  }
+function carouselObject(container) {
+  var items = container.querySelectorAll(".carousel-list__item");
+  var previousBtn = container.querySelector(".carousel-arrow--prev");
+  var nextBtn = container.querySelector(".carousel-arrow--next");
+  var current = Math.trunc(items.length / 2);
+  console.log(current);
+  previousBtn.addEventListener("click", function (e) {
+    items[current].className = "carousel-list__item carousel-list__item--next";
+    current -= 1;
+    items[current].classList.add("carousel-list__item--current");
+    items[current].classList.remove("examples__image-list-item--previous");
+    nextBtn.removeAttribute("disabled");
+    if (current === 0) {
+      previousBtn.setAttribute("disabled", "");
+    }
+  });
+  nextBtn.addEventListener("click", function (e) {
+    items[current].className = "carousel-list__item carousel-list__item--previous";
+    current += 1;
+    items[current].classList.add("carousel-list__item--current");
+    items[current].classList.remove("carousel-list__item--next");
+    previousBtn.removeAttribute("disabled");
+    if (current === items.length - 1) {
+      nextBtn.setAttribute("disabled", "");
+    }
+  });
+}
+
+var carouselArr = document.querySelectorAll(".carousel-list");
+
+carouselArr.forEach(function (carouselEll) {
+  carouselObject(carouselEll);
 });
 
-}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_123049f3.js","/")
+}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_f83d303e.js","/")
 },{"buffer":2,"e/U+97":4}]},{},[5])
