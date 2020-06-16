@@ -3,6 +3,13 @@
   overflow: hidden;
 
   margin: 0 auto;
+
+  &--team{
+    .carousel-list__item{
+      width: 100%;
+      min-height: 304px;
+    }
+  }
 }
 
 .carousel-list__item{
