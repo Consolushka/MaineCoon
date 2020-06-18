@@ -3,7 +3,6 @@ function carouselObject(container) {
   var previousBtn = container.querySelector(".carousel-arrow--prev");
   var nextBtn = container.querySelector(".carousel-arrow--next");
   var current = Math.trunc(items.length / 2);
-  console.log(current);
   previousBtn.addEventListener("click", function (e) {
     items[current].className = "carousel-list__item carousel-list__item--next";
     current -= 1;
@@ -31,3 +30,8 @@ var carouselArr = document.querySelectorAll(".carousel-list");
 carouselArr.forEach(function (carouselEll) {
   carouselObject(carouselEll);
 });
+
+/*var statuswrapper = document.querySelector(".faq-list__item-heading-status svg");
+var status = document.querySelector(".faq-list__item-heading-status svg use");
+statuswrapper.setAttribute("height","2");
+status.setAttribute("xlink:href", "img/sprite.svg#icon-minus");*/
