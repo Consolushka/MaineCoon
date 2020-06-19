@@ -1,19 +1,10 @@
-var questions = document.querySelectorAll(".faq-list__item");
-var statusWrapper,statusIndicator;
-questions.forEach(function (question) {
-  question.addEventListener("click",function () {
-    statusWrapper = question.querySelector(".faq-list__item-heading-status svg");
-    statusIndicator = question.querySelector(".faq-list__item-heading-status svg use");
-    if(question.classList.contains("faq-list__item--active")){
-      question.classList.remove("faq-list__item--active");
-      statusWrapper.setAttribute("height","20");
-      statusIndicator.setAttribute("xlink:href", "img/sprite.svg#icon-plus");
-    }
-    else{
-      statusWrapper.setAttribute("height","2");
-      statusIndicator.setAttribute("xlink:href", "img/sprite.svg#icon-minus");
-      question.classList.add("faq-list__item--active");
-    }
-
+$(document).ready(function () {
+  var faqButtons = $(".faq-list__item-heading");
+  faqButtons.on("click", function () {
+    var faqItem = $(this).parent();
+    var faqContent = faqItem.find(".faq-list__item-slogan");
+    var faqStatus = faqItem.find(".faq-list__item-heading-status");
+    faqContent.slideToggle(400);
+    faqStatus.toggleClass("faq-list__item-heading-status--active");
   });
 });

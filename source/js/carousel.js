@@ -30,8 +30,3 @@ var carouselArr = document.querySelectorAll(".carousel-list");
 carouselArr.forEach(function (carouselEll) {
   carouselObject(carouselEll);
 });
-
-/*var statuswrapper = document.querySelector(".faq-list__item-heading-status svg");
-var status = document.querySelector(".faq-list__item-heading-status svg use");
-statuswrapper.setAttribute("height","2");
-status.setAttribute("xlink:href", "img/sprite.svg#icon-minus");*/

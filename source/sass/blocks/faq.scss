@@ -1,39 +1,30 @@
-.faq{
+.faq {
   padding-top: 60px;
   padding-bottom: 30px;
 
 }
 
-.faq__heading{
+.faq__heading {
   margin-bottom: 35px;
 }
 
-.faq__slogan{
+.faq__slogan {
   margin-bottom: 40px;
   max-width: 177px;
 }
 
-.faq-list__item{
+.faq-list__item {
   margin: 0 auto;
   cursor: pointer;
   max-width: 290px;
   border: 1px solid #544332;
+  border-bottom: none;
   margin-bottom: 30px;
   overflow: hidden;
   position: relative;
-
-  &--active{
-    .faq-list__item-heading-status{
-      background-color: $color-primary;
-    }
-
-    .faq-list__item-slogan{
-      position: static;
-    }
-  }
 }
 
-.faq-list__item-heading{
+.faq-list__item-heading {
   border-bottom: 1px solid #544332;
   position: relative;
   display: flex;
@@ -41,7 +32,7 @@
   justify-content: flex-start;
   align-items: center;
 
-  p{
+  p {
     text-align: left;
     padding-top: 15px;
     width: 219px;
@@ -51,20 +42,45 @@
   }
 }
 
-.faq-list__item-heading-status{
+.faq-list__item-heading-status {
   border-left: 1px solid #544332;
   position: absolute;
   width: 43px;
   height: 100%;
-  right:0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.4s;
+
+  svg {
+    stroke: $color-primary;
+    transition-duration: 0.4s;
+
+    &:last-child {
+      transform: rotate(90deg);
+      position: absolute;
+
+    }
+  }
+
+  &--active {
+    background-color: $color-primary;
+
+    svg {
+      stroke: $color-white;
+
+      &:last-child {
+        transform: rotate(180deg);
+      }
+    }
+  }
 }
 
-.faq-list__item-slogan{
-  position: absolute;
+.faq-list__item-slogan {
+  display: none;
   text-align: left;
+  border-bottom: 1px solid #544332;
   color: #DDD0C3;
   padding: 15px;
   padding-right: 26px;
