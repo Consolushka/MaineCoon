@@ -1,0 +1,32 @@
+.footer{
+  background-color: $color-dark;
+  padding: 40px 0;
+}
+.footer-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer__location{
+  color: #D6CCC2;
+
+  margin-bottom: 20px;
+}
+
+.footer__tel{
+  color: #FDF2E6;
+
+  margin-bottom: 25px;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.footer__socials{
+  width: 87px;
+
+  margin-bottom: 25px;
+}

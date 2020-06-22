@@ -10,6 +10,13 @@
       min-height: 304px;
     }
   }
+
+  &--review{
+    .carousel-list__item{
+      width: 100%;
+      min-height: 357px;
+    }
+  }
 }
 
 .carousel-list__item{
