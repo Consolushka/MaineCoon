@@ -81,7 +81,6 @@
 }
 
 .review__member-info-social{
-  width: 71px;
 }
 
 .review__member-info{
@@ -93,14 +92,23 @@
   align-items: center;
 }
 
+.review__member-info-date{
+  font-size: 12px;
+}
+
 .review__member-info-social-item{
   width: 28px;
   height: 28px;
   border: 1px solid $color-primary;
   text-align: center;
+  margin: 0 8px;
   padding: 6px 0;
 
   transition: 0.2s;
+
+  &:last-child{
+    margin-right: 0;
+  }
 
   &:hover{
     border-color: $color-white;

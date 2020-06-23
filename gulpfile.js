@@ -66,7 +66,13 @@ gulp.task("images", function () {
         optimizationLevel: 3,
         progressive: true
       }),
-      imagemin.svgo()
+      imagemin.svgo({
+          plugins: [
+            {
+              removeViewBox: false
+            }
+          ]
+        })
     ]))
     .pipe(gulp.dest("source/img"));
 });

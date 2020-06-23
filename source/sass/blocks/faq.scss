@@ -22,6 +22,18 @@
   margin-bottom: 30px;
   overflow: hidden;
   position: relative;
+
+  &:hover{
+    border-color: $color-primary;
+
+    .faq-list__item-heading{
+      border-color: $color-primary;
+    }
+
+    .faq-list__item-slogan{
+      border-color: $color-primary;
+    }
+  }
 }
 
 .faq-list__item-heading {

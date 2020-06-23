@@ -86,6 +86,10 @@
 
 .team__member-social-list {
   margin: 0 auto;
-  width: 70px;
+  width: fit-content;
   margin-bottom: 16px;
+
+  li{
+    margin: 0 8px;
+  }
 }
