@@ -68,7 +68,7 @@
 @media (min-width: $tablet-width){
   .about{
     padding-top: 90px;
-    background: url("../../img/about-cat-bg--720@1x.jpg");
+    background-image: url("../../img/about-cat-bg--720@1x.jpg");
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -84,9 +84,9 @@
   }
 
   .about__card{
-    height: 169px;
+    min-height: 169px;
     border-right-width: 60px;
-    min-width: 560px;
+    max-width: 560px;
     padding: 36px 8px 47px 57px;
     margin-bottom: 22px;
 
