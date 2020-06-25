@@ -20,12 +20,12 @@
 <body>
 <header class="header" id="top">
   <div class="container">
+    <div class="header__logo">
+      <svg width="50" height="24">
+        <use xlink:href="img/sprite.svg#icon-crown"></use>
+      </svg>
+    </div>
     <div class="header__wrapper">
-      <div class="header__logo">
-        <svg width="50" height="24">
-          <use xlink:href="img/sprite.svg#icon-crown"></use>
-        </svg>
-      </div>
 
       <div class="header__info">
 
@@ -70,9 +70,12 @@
         </ul>
       </div>
       <picture class="header__cat-wrapper">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/main-cat--768@2x.webp 2x, img/main-cat--768@1x.webp 1x">
         <source type="image/webp" srcset="img/main-cat--320@2x.webp 2x, img/main-cat--320.webp 1x">
+
+        <source media="(min-width: 768px)" srcset="img/main-cat--768@2x.png 2x, img/main-cat--768@1x.png 1x">
         <source srcset="img/main-cat--320@2x.png 2x">
-        <img class="header__cat" src="img/main-cat--320.png" alt="Главный, красивый, рыжий кот" width="275" height="256">
+        <img class="header__cat" src="img/main-cat--320@1x.png" alt="Главный, красивый, рыжий кот" width="275" height="256">
       </picture>
     </div>
   </div>
@@ -101,43 +104,69 @@
       <div class="examples__image-wrapper">
         <article class="carousel-list examples__image-list">
 
-          <button type="button" class="base-arrow base-arrow--prev carousel-arrow carousel-arrow--prev" id="examples-button--prev">
+          <button type="button" class="examples__image-btn base-arrow base-arrow--prev carousel-arrow carousel-arrow--prev" id="examples-button--prev">
             <svg width="10" height="20" fill="none">
               <use xlink:href="img/sprite.svg#icon-arrow"></use>
             </svg>
           </button>
 
           <picture class="carousel-list__item carousel-list__item--previous">
-            <source type="image/webp" srcset="img/example-cat--first--320@2x.webp 2x, img/example-cat--first--320@1x.webp 1x">
-            <source srcset="img/example-cat--first--320@2x.png 2x">
-            <img src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/example-cat--second--768@2x.webp 2x, img/example-cat--second--768@1x.webp 1x">
+            <source type="image/webp" srcset="img/example-cat--second--320@2x.webp 2x, img/example-cat--second--320@1x.webp 1x">
+            <source media="(min-width: 768px)" srcset="img/example-cat--second--768@2x.png 2x, img/example-cat--second--768@1x.png 1x">
+            <source srcset="img/example-cat--second--320@2x.png 2x">
+            <img class="examples__image-item examples__image-item--other" src="img/example-cat--second--320@1x.png" width="234" height="248" alt="Изображение второго кота">
           </picture>
 
           <picture class="carousel-list__item carousel-list__item--previous">
+            <source type="image/webp" media="(min-width: 768px)"  srcset="img/example-cat--first--768@2x.webp 2x, img/example-cat--first--768@1x.webp 1x">
+            <source type="image/webp" srcset="img/example-cat--first--320@2x.webp 2x, img/example-cat--first--320@1x.webp 1x">
+            <source media="(min-width: 768px)" srcset="img/example-cat--first--768@2x.png 2x, img/example-cat--first--768@1x.png 1x">
+            <source srcset="img/example-cat--first--320@2x.png 2x">
+            <img class="examples__image-item" src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
+          </picture>
+
+          <picture class="carousel-list__item carousel-list__item--previous">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/example-cat--second--768@2x.webp 2x, img/example-cat--second--768@1x.webp 1x">
             <source type="image/webp" srcset="img/example-cat--second--320@2x.webp 2x, img/example-cat--second--320@1x.webp 1x">
+            <source media="(min-width: 768px)" srcset="img/example-cat--second--768@2x.png 2x, img/example-cat--second--768@1x.png 1x">
             <source srcset="img/example-cat--second--320@2x.png 2x">
-            <img src="img/example-cat--second--320@1x.png" width="234" height="248" alt="Изображение второго кота">
+            <img class="examples__image-item examples__image-item--other" src="img/example-cat--second--320@1x.png" width="234" height="248" alt="Изображение второго кота">
           </picture>
 
           <picture class="carousel-list__item carousel-list__item--current">
+            <source type="image/webp" media="(min-width: 768px)"  srcset="img/example-cat--first--768@2x.webp 2x, img/example-cat--first--768@1x.webp 1x">
             <source type="image/webp" srcset="img/example-cat--first--320@2x.webp 2x, img/example-cat--first--320@1x.webp 1x">
+            <source media="(min-width: 768px)" srcset="img/example-cat--first--768@2x.png 2x, img/example-cat--first--768@1x.png 1x">
             <source srcset="img/example-cat--first--320@2x.png 2x">
-            <img src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
+            <img class="examples__image-item" src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
           </picture>
 
           <picture class="carousel-list__item carousel-list__item--next">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/example-cat--third--768@2x.webp 2x, img/example-cat--third--768@1x.webp 1x">
             <source type="image/webp" srcset="img/example-cat--third--320@2x.webp 2x, img/example-cat--third--320@1x.webp 1x">
+            <source media="(min-width: 768px)" srcset="img/example-cat--third--768@2x.png 2x, img/example-cat--third--768@1x.png 1x">
             <source srcset="img/example-cat--third--768@2x.png 2x">
-            <img src="img/example-cat--third--320@1x.png" width="234" height="248" alt="Изображение третьего кота">
+            <img class="examples__image-item examples__image-item--other" src="img/example-cat--third--320@1x.png" width="234" height="248" alt="Изображение третьего кота">
           </picture>
 
           <picture class="carousel-list__item carousel-list__item--next">
+            <source type="image/webp" media="(min-width: 768px)"  srcset="img/example-cat--first--768@2x.webp 2x, img/example-cat--first--768@1x.webp 1x">
             <source type="image/webp" srcset="img/example-cat--first--320@2x.webp 2x, img/example-cat--first--320@1x.webp 1x">
+            <source media="(min-width: 768px)" srcset="img/example-cat--first--768@2x.png 2x, img/example-cat--first--768@1x.png 1x">
             <source srcset="img/example-cat--first--320@2x.png 2x">
-            <img src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
+            <img class="examples__image-item" src="img/example-cat--first--320@1x.png" width="234" height="248" alt="Изображение первого кота">
           </picture>
 
-          <button type="button" class="base-arrow base-arrow--next carousel-arrow carousel-arrow--next" id="examples-button--next">
+          <picture class="carousel-list__item carousel-list__item--next">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/example-cat--third--768@2x.webp 2x, img/example-cat--third--768@1x.webp 1x">
+            <source type="image/webp" srcset="img/example-cat--third--320@2x.webp 2x, img/example-cat--third--320@1x.webp 1x">
+            <source media="(min-width: 768px)" srcset="img/example-cat--third--768@2x.png 2x, img/example-cat--third--768@1x.png 1x">
+            <source srcset="img/example-cat--third--768@2x.png 2x">
+            <img class="examples__image-item examples__image-item--other" src="img/example-cat--third--320@1x.png" width="234" height="248" alt="Изображение третьего кота">
+          </picture>
+
+          <button type="button" class="examples__image-btn base-arrow base-arrow--next carousel-arrow carousel-arrow--next" id="examples-button--next">
             <svg width="10" height="20" fill="none">
               <use xlink:href="img/sprite.svg#icon-arrow"></use>
             </svg>
@@ -157,12 +186,14 @@
         <h2 class="features__heading title title--h2">Особенности породы</h2>
         <p class="features__slogan base-text">
           Мейн-Кун - это порода, которая вызывает к себе уважение.
-          Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных
+          Приобретая в свой дом этого питомца, вы получите<br> умное животное, которому нет равных
         </p>
         <div class="features__circle-main circle circle--main">
           <div class="features__circle-secondary circle circle--secondary">
             <picture class="features__cat">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/features-cat--768@2x.webp 2x, img/features-cat--768@1x.webp 1x">
               <source type="image/webp" srcset="img/features-cat--320@2x.webp 2x, img/features-cat--320@1x.webp 1x">
+              <source media="(min-width: 768px)" srcset="img/features-cat--768@2x.png 2x, img/features-cat--768@1x.png 1x">
               <source srcset="img/features-cat--320@2x.png 2x">
               <img src="img/features-cat--320@1x.png" width="267" height="291" alt="Изображение образцового кота">
             </picture>
@@ -179,7 +210,7 @@
               дрессированная собака
             </li>
             <li class="base-list__item">
-              Вес может достигать 12 кг, а длина 1 м
+              Вес может достигать 12<br> кг, а длина 1 м
             </li>
             <li class="base-list__item">
               Внешний вид этой кошки<br>

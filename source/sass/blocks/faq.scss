@@ -26,11 +26,7 @@
   &:hover{
     border-color: $color-primary;
 
-    .faq-list__item-heading{
-      border-color: $color-primary;
-    }
-
-    .faq-list__item-slogan{
+    *{
       border-color: $color-primary;
     }
   }

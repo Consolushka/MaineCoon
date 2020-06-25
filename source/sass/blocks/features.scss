@@ -1,4 +1,4 @@
-.features{
+.features {
   margin-bottom: 30px;
 }
 
@@ -10,17 +10,21 @@
   align-items: center;
 }
 
-.features__heading{
+.features__heading {
   margin-bottom: 35px;
   max-width: 290px;
 }
 
-.features__slogan{
+.features__slogan {
   margin-bottom: 54px;
   max-width: 290px;
+
+  br {
+    display: none;
+  }
 }
 
-.features__circle-main{
+.features__circle-main {
   position: relative;
   display: flex;
   justify-content: center;
@@ -29,15 +33,128 @@
   margin-bottom: 40px;
 }
 
-.features__cat{
+.features__cat {
   position: absolute;
   transform: translate(-50%, -25%);
   transition-duration: 0.4s;
-  &:hover{
+
+  &:hover {
     transform: translate(-50%, -25%) scale(1.1);
   }
 }
 
-.features-list{
+.features__list {
   max-width: 233px;
+
+  li {
+    &:nth-child(3) {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features{
+    margin-bottom: 57px;
+  }
+  .features__heading {
+    max-width: 400px;
+    margin-bottom: 21px;
+  }
+
+  .features__slogan {
+    max-width: 443px;
+    margin-bottom: 80px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .features__wrapper {
+    position: relative;
+  }
+
+  .features__cat {
+    transform: translate(-47%,-20%);
+
+    img {
+      width: 395px;
+      height: auto;
+    }
+
+    &:hover {
+      transform: translate(-47%,-20%) scale(1.05);
+    }
+  }
+
+  .features__list {
+    position: absolute;
+    top: 313px;
+    min-width: 718px;
+    height: 319px;
+    z-index: -1;
+    li {
+      position: absolute;
+      max-width: 140px;
+      font-size: 16px;
+      line-height: 23px;
+
+      &:first-child {
+        text-align: right;
+        font-size: 14px;
+        line-height: 21px;
+        left: 21px;
+        margin-left: 0;
+
+        &:before {
+          left: auto;
+          right: -25px;
+        }
+
+        br {
+          display: none;
+        }
+      }
+
+      &:nth-child(2) {
+        top: 70px;
+        right: 10px;
+        line-height: 25px;
+        width: 130px;
+
+        br {
+          display: none;
+        }
+      }
+
+      &:nth-child(3) {
+        bottom: 0;
+        right: 36px;
+        width: 130px;
+
+        br {
+          display: block;
+        }
+      }
+
+      &:last-child{
+        bottom: 28px;
+        left: 8px;
+        text-align: right;
+        margin-left: 0;
+
+        &:before{
+          left:auto;
+          right: -25px;
+        }
+
+        br{
+          display: none;
+        }
+      }
+    }
+  }
 }

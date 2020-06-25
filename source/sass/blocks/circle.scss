@@ -13,3 +13,18 @@
     background: #151313;
   }
 }
+
+@media (min-width: $tablet-width){
+  .circle{
+
+    &--main{
+      width: 416px;
+      height: 423px;
+    }
+
+    &--secondary{
+      width: 342px;
+      height: 348px;
+    }
+  }
+}

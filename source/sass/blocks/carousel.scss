@@ -38,3 +38,20 @@
     transform: scale(1) translateX(-50%);
   }
 }
+
+@media (min-width: $tablet-width){
+  .examples__image-list{
+    .carousel-list__item--previous{
+      left: -14%;
+      transform: scale(0.5);
+    }
+    .carousel-list__item--next{
+      left: 38%;
+      transform: scale(0.5);
+    }
+    .carousel-list__item--current{
+      left: 50%;
+      transform: scale(1) translateX(-50%);
+    }
+  }
+}

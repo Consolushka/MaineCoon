@@ -1,7 +1,7 @@
 .social-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -10,5 +10,15 @@
 
   &:hover{
     fill: $color-white;
+  }
+}
+
+@media (min-width: $tablet-width){
+  .social-list__item{
+    fill: $color-white;
+
+    &:hover{
+      fill: $color-primary;
+    }
   }
 }
