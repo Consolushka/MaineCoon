@@ -13,7 +13,8 @@
 
   &:disabled {
     stroke: darken($color-primary, 20%);
-    &:hover{
+
+    &:hover {
       transform: none;
     }
   }
@@ -25,10 +26,19 @@
       transform: scale(1.2) rotate(180deg);
     }
 
-    &:disabled{
-      &:hover{
+    &:disabled {
+      &:hover {
         transform: rotate(180deg);
       }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .base-arrow {
+    svg {
+      transform: scale(1.6);
+      stroke-width: 1.5;
     }
   }
 }
