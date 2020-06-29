@@ -46,6 +46,10 @@
   }
 }
 
+.review__arrow-tablet{
+  display: none;
+}
+
 .review__member{
   width: 100%;
   background-color: $color-dark;
@@ -112,5 +116,62 @@
 
   &:hover{
     border-color: $color-white;
+  }
+}
+
+@media (min-width: $tablet-width){
+  .review-wrapper{
+    max-width: 578px;
+    height: 564px;
+  }
+
+  .review__member-image{
+    img{
+      width: 302px;
+      height: 208px;
+      object-fit: cover;
+    }
+  }
+
+  .review__member{
+    padding-top: 148px;
+    padding-bottom: 33px;
+  }
+
+  .review__member-name{
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 19px;
+  }
+
+  .review__member-slogan{
+    max-width: 380px;
+    font-size: 14px;
+    font-weight: 300;
+
+    br{
+      display: block;
+    }
+  }
+
+  .review__arrow{
+    top: 135px;
+
+    &--prev{
+      left: 130px;
+    }
+
+    &--next{
+      right: 110px;
+      left: auto;
+    }
+  }
+
+  .review__arrow-base{
+    display: none;
+  }
+
+  .review__arrow-tablet{
+    display: block;
   }
 }

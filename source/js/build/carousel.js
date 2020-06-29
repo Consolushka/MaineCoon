@@ -1443,7 +1443,6 @@ function carouselTabletExamples (container){
     items[i].setAttribute("style","z-index:"+z);
   }
 
-
   previousBtn.addEventListener("click", function (e) {
     items[current].className = "carousel-list__item carousel-list__item--next";
     current -= 1;
@@ -1494,5 +1493,5 @@ carouselArr.forEach(function (carouselEll) {
   carouselObject(carouselEll);
 });
 
-}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_d2c09810.js","/")
+}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_4fbc9d37.js","/")
 },{"buffer":2,"e/U+97":4}]},{},[5])

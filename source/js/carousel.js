@@ -45,7 +45,6 @@ function carouselTabletExamples (container){
     items[i].setAttribute("style","z-index:"+z);
   }
 
-
   previousBtn.addEventListener("click", function (e) {
     items[current].className = "carousel-list__item carousel-list__item--next";
     current -= 1;

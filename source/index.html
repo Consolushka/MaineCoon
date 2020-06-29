@@ -597,7 +597,10 @@
 
         <button type="button" class="review__arrow review__arrow--prev base-arrow base-arrow--prev carousel-arrow carousel-arrow--prev">
           <span class="visually-hidden">Предыдущий отзыв</span>
-          <svg width="10" height="20" fill="none">
+          <svg width="59" height="16" fill="none" class="review__arrow-tablet">
+            <use xlink:href="img/sprite.svg#icon-arrow--big"></use>
+          </svg>
+          <svg width="10" height="20" fill="none" class="review__arrow-base">
             <use xlink:href="img/sprite.svg#icon-arrow"></use>
           </svg>
         </button>
@@ -605,7 +608,9 @@
         <article class="carousel-list__item carousel-list__item--previous">
           <div class="review__member">
             <picture class="review__member-image">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/employee-1--768@2x.webp 2x, img/employee-1--768@1x.webp 1x">
               <source type="image/webp" srcset="img/employee-1--320@2x.webp 2x, img/employee-1--320@1x.webp 1x">
+              <source media="(min-width: 768px)" srcset="img/employee-1--768@2x.jpg 2x, img/employee-1--768@1x.jpg">
               <source srcset="img/employee-1--320@2x.jpg 2x">
               <img src="img/employee-1--320@1x.jpg" width="126" height="126" alt="Фотография Сережи Попова">
             </picture>
@@ -613,8 +618,8 @@
               Сергей Попов
             </p>
             <p class="review__member-slogan base-text base-text--white">
-              Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен<br>
-              и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время
+              Я выражаю огромную благодарность <br> вашему питомнику. Мой Феликс невероятно <br> умен
+              и воспитан. Огромным плюсом питомника <br> является возможность консультироваться в любое время
             </p>
             <div class="review__member-info">
               <p class="review__member-info-date">
@@ -645,7 +650,9 @@
         <article class="carousel-list__item carousel-list__item--current">
           <div class="review__member">
             <picture class="review__member-image">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/employee-1--768@2x.webp 2x, img/employee-1--768@1x.webp 1x">
               <source type="image/webp" srcset="img/employee-1--320@2x.webp 2x, img/employee-1--320@1x.webp 1x">
+              <source media="(min-width: 768px)" srcset="img/employee-1--768@2x.jpg 2x, img/employee-1--768@1x.jpg">
               <source srcset="img/employee-1--320@2x.jpg 2x">
               <img src="img/employee-1--320@1x.jpg" width="126" height="126" alt="Фотография Сережи Попова">
             </picture>
@@ -685,7 +692,9 @@
         <article class="carousel-list__item carousel-list__item--next">
           <div class="review__member">
             <picture class="review__member-image">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/employee-1--768@2x.webp 2x, img/employee-1--768@1x.webp 1x">
               <source type="image/webp" srcset="img/employee-1--320@2x.webp 2x, img/employee-1--320@1x.webp 1x">
+              <source media="(min-width: 768px)" srcset="img/employee-1--768@2x.jpg 2x, img/employee-1--768@1x.jpg">
               <source srcset="img/employee-1--320@2x.jpg 2x">
               <img src="img/employee-1--320@1x.jpg" width="126" height="126" alt="Фотография Сережи Попова">
             </picture>
@@ -724,7 +733,10 @@
 
         <button type="button" class="review__arrow review__arrow--next base-arrow base-arrow--next carousel-arrow carousel-arrow--next">
           <span class="visually-hidden">Следующий отзыв</span>
-          <svg width="10" height="20" fill="none">
+          <svg width="59" height="16" fill="none" class="review__arrow-tablet">
+            <use xlink:href="img/sprite.svg#icon-arrow--big"></use>
+          </svg>
+          <svg width="10" height="20" fill="none" class="review__arrow-base">
             <use xlink:href="img/sprite.svg#icon-arrow"></use>
           </svg>
         </button>

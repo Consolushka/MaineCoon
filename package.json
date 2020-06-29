@@ -30,7 +30,8 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "minify": "gulp minify",
-    "start": "gulp start"
+    "start": "gulp start",
+    "svgstore": "gulp svgstore"
   },
   "browserslist": [
     "last 2 versions",
